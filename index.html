@@ -7,16 +7,10 @@
 </head>
 <body>
     <center>
-        <audio id="audioPlayer" src="https://us2freenew.listen2myradio.com/live.mp3?typeportmount=s1_11840_stream_10808363" preload="none"></audio>
-        <button onclick="playAudio()">Reproducir</button>
+        <audio controls>
+            <source src="https://us2freenew.listen2myradio.com/live.mp3?typeportmount=s1_11840_stream_10808363" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
     </center>
-
-    <script>
-        var audioPlayer = document.getElementById("audioPlayer");
-
-        function playAudio() {
-            audioPlayer.play();
-        }
-    </script>
 </body>
 </html>
